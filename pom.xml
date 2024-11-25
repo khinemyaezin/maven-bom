@@ -5,7 +5,7 @@
 
     <groupId>com.coolstuff.ecommerce.grab</groupId>
     <artifactId>maven-bom</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <packaging>pom</packaging>
     <name>maven-bom</name>
     <description>Maven bom</description>
@@ -38,6 +38,7 @@
         <junit-jupiter-api.version>5.10.2</junit-jupiter-api.version>
         <nested-set.library.version>0.0.1</nested-set.library.version>
         <nested-set.app.version>0.0.1</nested-set.app.version>
+        <joda-money.version>2.0.0</joda-money.version>
     </properties>
 
     <dependencyManagement>
@@ -93,6 +94,11 @@
                 <groupId>com.coolstuff.core</groupId>
                 <artifactId>app</artifactId>
                 <version>${nested-set.app.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.joda</groupId>
+                <artifactId>joda-money</artifactId>
+                <version>${joda-money.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
